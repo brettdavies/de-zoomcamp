@@ -33,3 +33,12 @@ clean-targets:         # directories to be removed by `dbt clean`
 # using the `{{ config(...) }}` macro.
 models:
   nytaxi:
+
+seeds:
+  nytaxi:
+    taxi_zone_lookup:
+      +column_types:
+        locationID: numeric
+
+vars:
+  payment_type_values: [1, 2, 3, 4, 5, 6]
