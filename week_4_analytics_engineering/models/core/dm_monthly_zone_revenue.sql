@@ -7,7 +7,6 @@ with trips_data as (
     -- Revenue grouping 
     pickup_zone as revenue_zone,
     date_trunc(pickup_datetime, month) as revenue_month, 
-
     service_type, 
 
     -- Revenue calculation 
